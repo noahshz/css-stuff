@@ -1,5 +1,5 @@
 .cube {
-    /* change scaling, width or margin for resizing the cube or the space between*/
+    /* change scaling, width or margin for resizing the cube or the space between */
     --cube-width: 100px;
     transform: scale(1);
     margin: 10px;
