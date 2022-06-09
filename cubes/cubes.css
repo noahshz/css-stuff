@@ -1,0 +1,76 @@
+.cube {
+    /* change scaling or width for resizing the cube */
+    --cube-width: 100px;
+    transform: scale(1);
+
+    --cube-heigth: var(--cube-width);
+    width: var(--cube-width);
+    height: var(--cube-heigth);
+    margin: calc(var(--cube-heigth) / 4);
+
+    margin-bottom: calc(var(--cube-heigth) / 2);
+    margin-right: calc(var(--cube-heigth) / 4);
+    margin-top: 0px;
+}
+.cube > .side {
+    background-color: grey;
+    width: var(--cube-width);
+    height: var(--cube-heigth);
+}
+
+.cube > .side.top {
+    transform: skew(-45deg) rotate(0deg);
+    height: 50%;
+    background-color: rgb(148, 148, 148);
+}
+.cube > .side.top.red {
+    background-color: rgb(196, 32, 32);
+}
+.cube > .side.top.blue {
+    background-color: rgb(39, 39, 179);
+}
+.cube > .side.top.green {
+    background-color: rgb(0, 136, 0);
+}
+.cube > .side.top.yellow {
+    background-color: rgb(201, 201, 24);
+}
+
+.cube > .side.right {
+    transform: rotate(90deg) skew(45deg);
+    height: 50%;
+    position: relative;
+    left: 50%;
+    background-color: grey;
+}
+.cube > .side.right.red {
+    background-color: darkred;
+}
+.cube > .side.right.blue {
+    background-color: darkblue;
+}
+.cube > .side.right.green {
+    background-color: darkgreen;
+}
+.cube > .side.right.yellow {
+    background-color: rgb(180, 180, 3);
+}
+
+.cube > .side.front {
+    position: relative;
+    right: 25%;
+    bottom: 50%;
+    background-color: darkgrey;
+}
+.cube > .side.front.red {
+    background-color: red;
+}
+.cube > .side.front.blue {
+    background-color: blue;
+}
+.cube > .side.front.green {
+    background-color: green;
+}
+.cube > .side.front.yellow {
+    background-color: rgb(228, 228, 1);
+}
