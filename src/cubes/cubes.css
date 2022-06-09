@@ -1,16 +1,18 @@
 .cube {
-    /* change scaling or width for resizing the cube */
+    /* change scaling, width or margin for resizing the cube or the space between*/
     --cube-width: 100px;
     transform: scale(1);
+    margin: 10px;
+    /* ------------------ */
 
     --cube-heigth: var(--cube-width);
     width: var(--cube-width);
     height: var(--cube-heigth);
-    margin: calc(var(--cube-heigth) / 4);
+    padding: calc(var(--cube-heigth) / 4);
 
-    margin-bottom: calc(var(--cube-heigth) / 2);
-    margin-right: calc(var(--cube-heigth) / 4);
-    margin-top: 0px;
+    padding-bottom: calc(var(--cube-heigth) / 2);
+    padding-right: calc(var(--cube-heigth) / 4);
+    padding-top: 0px;
 }
 .cube > .side {
     background-color: grey;
